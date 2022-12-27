@@ -2,6 +2,9 @@
 $bg-color: #F1F1F1;
 $primary-color: #606060;
 $secondary-color: #F44336;
+$black: #000;
+$white: #fff;
+
 
 // Fontes
 $font: 'Roboto', sans-serif;
@@ -27,6 +30,14 @@ $s-device: 480px;
     }
   }
 }
+
+body{
+  font-family: $font;
+  line-height: 1.5rem;
+  background: $bg-color;
+}
+
+
 
 
 
