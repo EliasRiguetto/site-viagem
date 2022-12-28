@@ -91,7 +91,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .search-options .btn:hover {
-  background: #CCCCCC;
+  background: #b6b4b4;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -112,13 +112,13 @@ body {
   margin-bottom: 4px;
 }
 .form input[type=text] {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #b6b4b4;
   padding: 0.5rem;
   width: 100%;
   margin-bottom: 1rem;
 }
 .form input[type=text]::placeholder {
-  color: #CCCCCC;
+  color: #b6b4b4;
 }
 
 .offers {
@@ -146,6 +146,43 @@ body {
   left: 0.5rem;
   color: #fff;
   font-size: 1.2rem;
+}
+
+.gallery {
+  width: 1200px;
+  margin: 60px auto;
+}
+.gallery p {
+  color: #606060;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.gallery-items li {
+  background-color: #fff;
+}
+
+.items-description {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+.items-description span {
+  display: block;
+  font-size: 0.875rem;
+  color: #b6b4b4;
+  margin-bottom: 0.5rem;
+}
+.items-description p {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+.items-description a {
+  text-decoration: none;
+  color: #F44336;
 }
 
 /*# sourceMappingURL=style.css.map */
