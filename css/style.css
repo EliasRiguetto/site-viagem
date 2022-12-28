@@ -36,18 +36,94 @@ body {
   align-items: center;
 }
 
-.form {
+.search-menu {
   width: 890px;
-  height: 100px;
   margin-top: 180px;
   margin-bottom: 180px;
-  background-color: chartreuse;
+}
+
+.search-buttons {
+  display: flex;
+}
+.search-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border: none;
+  color: #fff;
+  background: #000;
+  padding: 0.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.search-buttons button:hover, .search-buttons button.active {
+  background: #F44336;
+  transition: all 0.3s ease-in;
+}
+.search-buttons button img {
+  display: inline-block;
+  width: 18px;
+  margin-right: 0.7rem;
+}
+
+.search-options {
+  height: 220px;
+  background: #fff;
+  padding: 1rem;
+}
+.search-options h2 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #606060;
+}
+.search-options .btn {
+  color: #fff;
+  font-size: 1.2rem;
+  background: #606060;
+  border: none;
+  padding: 0.5rem 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.search-options .btn:hover {
+  background: #CCCCCC;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 20px;
+}
+.form div {
+  flex: 1;
+}
+.form label {
+  flex: 1;
+  display: block;
+  color: #606060;
+  margin-bottom: 4px;
+}
+.form input[type=text] {
+  border: 1px solid #CCCCCC;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form input[type=text]::placeholder {
+  color: #CCCCCC;
 }
 
 .offers {
   width: 1200px;
   margin: 40px auto;
   background-color: aqua;
+  height: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
