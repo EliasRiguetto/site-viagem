@@ -1,6 +1,26 @@
 .offers{
  width: $l-device;
- margin: 40px auto ;
- background-color: aqua;
-    height: 500px;
+ margin: 60px auto ;
+ p{
+    color: $primary-color;
+    margin-bottom: .5rem;
+ }
+}
+
+.offers-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.offers-items li {
+    position: relative;
+}
+.offers-items span{
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    color: $white;
+    font-size: 1.2rem;
+
 }
