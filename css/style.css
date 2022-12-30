@@ -31,6 +31,18 @@ body {
   color: #606060;
 }
 
+.btn {
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5rem 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
 .header {
   height: 40px;
   background: #fff;
@@ -82,18 +94,11 @@ body {
   background: #fff;
   padding: 1rem;
 }
-.search-options .btn {
-  color: #fff;
-  font-size: 1.2rem;
+.search-options button {
   background: #606060;
-  border: none;
-  padding: 0.5rem 3rem;
-  font-family: "Roboto", sans-serif;
 }
-.search-options .btn:hover {
+.search-options button:hover {
   background: #b6b4b4;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
 }
 
 .form {
@@ -221,17 +226,43 @@ body {
 }
 .form-email button {
   display: block;
-  color: #fff;
-  font-size: 1.2rem;
   background: #F44336;
-  border: none;
-  padding: 0.5rem 3rem;
-  font-family: "Roboto", sans-serif;
 }
 .form-email button:hover {
   background: #f77066;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
+}
+
+.contact {
+  width: 1200px;
+  margin: 60px auto;
+}
+.contact p {
+  margin-bottom: 0.5rem;
+}
+.contact ul {
+  margin-bottom: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #b6b4b4;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #606060;
+}
+.contact-form button:hover {
+  background: #b6b4b4;
 }
 
 /*# sourceMappingURL=style.css.map */

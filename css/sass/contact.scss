@@ -1,0 +1,34 @@
+.contact{
+  width: $l-device;
+  margin: 60px auto;
+  p{
+    margin-bottom: .5rem;
+  }
+  ul{
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-form{
+  input, textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    max-width: $l-device;
+    &:focus{
+      outline: none;
+    }
+    &::placeholder{
+      font-family: $font;
+      color: $details;
+      font-size: 1rem;
+    }
+  }
+  button{
+    background: $primary-color;
+    &:hover{
+      background: $details;
+    }
+  }
+}
