@@ -1,0 +1,46 @@
+.newsletter{
+    width: $l-device;
+    margin: 60px auto ;
+    background-color: $primary-color;
+    padding: 1rem;
+    color: $white;
+    h2{
+        color: $white;
+    }
+    p{
+        margin-bottom: .5rem;
+    }
+
+}
+.form-email{
+    label{
+        display: block;
+        margin-bottom: .2rem;
+    }
+    input{
+        width: 100%;
+        font-size: 1rem;
+        padding: .5rem;
+        margin-bottom: 1rem;
+        &::placeholder{
+            color: $details;
+        }&:focus{
+            outline: none;
+        }
+    }
+    button{
+        display: block;
+        color: $white;
+        font-size: 1.2rem;
+        background: $secondary-color;
+        border: none;
+        padding: .5rem 3rem;
+        font-family: $font;
+        &:hover{
+            background: lighten($color: $secondary-color, $amount: 10%);
+            cursor: pointer;
+            transition: all .3s ease-in;
+        }
+    }
+}
+

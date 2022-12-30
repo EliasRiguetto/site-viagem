@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Viaje pelo mundo conosco</title>
 </head>
+
 <body>
     <header class="header">
 
     </header>
     <main class="intro">
         <div class="search-menu">
-           <div class="search-buttons">
+            <div class="search-buttons">
                 <button class="active"><img src="./img/icones/plane.svg">Voos</button>
                 <button><img src="./img/icones/bed.svg">Hotel</button>
                 <button> <img src="./img/icones/car.svg">Aluguel</button>
-           </div>
-           <div class="search-options">
+            </div>
+            <div class="search-options">
                 <div class="voos">
                     <h2 class="titulo">Viaje pelo mundo conosco</h2>
                     <form action="/" class="form">
@@ -34,36 +38,36 @@
                     </form>
                     <button class="btn">Buscar Voos</button>
                 </div>
-           </div>
+            </div>
         </div>
     </main>
     <section class="offers">
         <h2 class="titulo">Aproveite as ofertas agora</h2>
         <p>Até <strong>50%</strong> de desconto</p>
+        <ul class="offers-items">
+            <li>
+                <a href="/"><img src="./img/cinqueterre.jpg" alt="cinqueterre"></a>
+                <span>Cinque Terre</span>
+            </li>
             <ul class="offers-items">
                 <li>
-                    <a href="/"><img src="./img/cinqueterre.jpg" alt="cinqueterre"></a>
-                    <span>Cinque Terre</span>
+                    <a href="/"><img src="./img/newyork.jpg" alt="newyork"></a>
+                    <span>Nova York</span>
                 </li>
-                <ul class="offers-items">
-                    <li>
-                        <a href="/"><img src="./img/newyork.jpg" alt="newyork"></a>
-                        <span>Nova York</span>
-                    </li>
-                    <li>
-                        <a href="/"><img src="./img/sanfran.jpg" alt="sanfrancisco"></a>
-                        <span>São Franscisco</span>
-                    </li>
-                    <li>
-                        <a href="/"><img src="./img/pisa.jpg" alt="pisa"></a>
-                        <span>Pisa</span>
-                    </li>
-                    <li>
-                        <a href="/"><img src="./img/paris.jpg" alt="paris"></a>
-                        <span>Paris</span>
-                    </li>
-                </ul>
+                <li>
+                    <a href="/"><img src="./img/sanfran.jpg" alt="sanfrancisco"></a>
+                    <span>São Franscisco</span>
+                </li>
+                <li>
+                    <a href="/"><img src="./img/pisa.jpg" alt="pisa"></a>
+                    <span>Pisa</span>
+                </li>
+                <li>
+                    <a href="/"><img src="./img/paris.jpg" alt="paris"></a>
+                    <span>Paris</span>
+                </li>
             </ul>
+        </ul>
     </section>
     <section class="gallery">
         <h2 class="titulo">Explore a natureza</h2>
@@ -90,7 +94,13 @@
         </ul>
     </section>
     <section class="newsletter">
-
+        <h2 class="titulo">Consiga as melhores ofertas primeiro!</h2>
+        <p>Receba nossas ofertas em seu email</p>
+        <form action="/" class="form-email">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu email">
+            <button>Inscrever-se</button>
+        </form>
     </section>
     <section class="contact">
 
@@ -99,4 +109,5 @@
 
     </footer>
 </body>
+
 </html>

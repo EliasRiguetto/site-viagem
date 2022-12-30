@@ -67,10 +67,13 @@
     input[type='text']{
         border: 1px solid $details;
         padding: .5rem;
+        font-size: 1rem;
         width: 100%;
         margin-bottom: 1rem;
         &::placeholder{
             color: $details;
+        }&:focus{
+            outline: none;
         }
     }
 
