@@ -2,10 +2,19 @@
   width: $l-device;
   margin: 60px auto;
   p{
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
   }
   ul{
     margin-bottom: 1rem;
+    li{
+      font-size: .875rem;
+      display: flex;
+      margin-bottom: .3rem;
+      gap: 1rem;
+      img{
+        height: 20px;
+      }
+    }
   }
 }
 

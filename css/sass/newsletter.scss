@@ -31,6 +31,7 @@
     button{
         display: block;
         background: $secondary-color;
+        margin-bottom: 1rem;
         &:hover{
             background: lighten($color: $secondary-color, $amount: 10%);
         }

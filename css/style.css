@@ -49,7 +49,7 @@ body {
 }
 
 .intro {
-  background: url("../../img/london.jpg") no-repeat center center;
+  background: url("./../img/london.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -227,6 +227,7 @@ body {
 .form-email button {
   display: block;
   background: #F44336;
+  margin-bottom: 1rem;
 }
 .form-email button:hover {
   background: #f77066;
@@ -237,10 +238,19 @@ body {
   margin: 60px auto;
 }
 .contact p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .contact ul {
   margin-bottom: 1rem;
+}
+.contact ul li {
+  font-size: 0.875rem;
+  display: flex;
+  margin-bottom: 0.3rem;
+  gap: 1rem;
+}
+.contact ul li img {
+  height: 20px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -263,6 +273,34 @@ body {
 }
 .contact-form button:hover {
   background: #b6b4b4;
+}
+
+.footer {
+  width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+.footer h3 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.footer ul {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.footer ul img {
+  height: 22px;
+}
+.footer span {
+  font-size: 0.875rem;
+  color: #606060;
+}
+.footer span a {
+  color: #606060;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
