@@ -44,8 +44,37 @@ body {
 }
 
 .header {
-  height: 40px;
+  padding: 1rem;
   background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  font-size: 1.4rem;
+  color: #F44336;
+}
+
+.header-search {
+  position: relative;
+}
+.header-search input {
+  position: absolute;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-indent: 2rem;
+  top: -1.125rem;
+  width: 2rem;
+  right: 1rem;
+  transition: left 0.3s ease-in, width 2s;
+  background: url(./../../img/icones/search.svg) no-repeat left center;
+  background-position: 0.5rem;
+}
+.header-search input:focus, .header-search input:hover {
+  outline: none;
+  border: 1px solid #b6b4b4;
+  width: 320px;
 }
 
 .intro {
