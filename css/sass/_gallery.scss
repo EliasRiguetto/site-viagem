@@ -1,0 +1,46 @@
+.gallery {
+  width: $l-device;
+  margin: 60px auto;
+  p {
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+  @include d(m) {
+    width: $m-device;
+  }
+  @include d(s) {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+    .gallery-items {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+.gallery-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  li {
+    background-color: $white;
+  }
+}
+
+.items-description {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  span {
+    display: block;
+    font-size: 0.875rem;
+    color: $details;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}

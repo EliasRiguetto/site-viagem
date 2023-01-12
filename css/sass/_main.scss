@@ -1,0 +1,11 @@
+.intro {
+  background: url("./../img/london.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include d(s) {
+    background: none;
+    align-items: initial;
+  }
+}

@@ -1,0 +1,43 @@
+.offers {
+  width: $l-device;
+  margin: 60px auto;
+  p {
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+  @include d(m) {
+    width: $m-device;
+    .offers-items {
+      gap: 1rem;
+    }
+  }
+  @include d(s) {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+    .offers-items {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+.offers-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  li {
+    position: relative;
+  }
+  span {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    color: $white;
+    font-size: 1.2rem;
+  }
+}

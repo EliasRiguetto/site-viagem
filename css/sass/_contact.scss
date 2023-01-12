@@ -1,42 +1,56 @@
-.contact{
+.contact {
   width: $l-device;
   margin: 60px auto;
-  p{
+  p {
     margin-bottom: 1rem;
   }
-  ul{
+  ul {
     margin-bottom: 1rem;
-    li{
-      font-size: .875rem;
+    li {
+      font-size: 0.875rem;
       display: flex;
-      margin-bottom: .3rem;
+      margin-bottom: 0.3rem;
       gap: 1rem;
-      img{
+      img {
         height: 20px;
+      }
+    }
+  }
+  @include d(m) {
+    width: $m-device;
+  }
+  @include d(s) {
+    margin: 20px auto;
+    width: 100%;
+    padding: 1rem;
+    .contact-form {
+      textarea {
+        max-width: 100%;
       }
     }
   }
 }
 
-.contact-form{
-  input, textarea{
+.contact-form {
+  input,
+  textarea {
     width: 100%;
     font-size: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
     max-width: $l-device;
-    &:focus{
+    &:focus {
       outline: none;
     }
-    &::placeholder{
+    &::placeholder {
       font-family: $font;
       color: $details;
       font-size: 1rem;
     }
   }
-  button{
+  button {
     background: $primary-color;
-    &:hover{
+    &:hover {
       background: $details;
     }
   }

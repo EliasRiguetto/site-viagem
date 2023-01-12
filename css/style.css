@@ -20,7 +20,7 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5rem;
-  background: #F1F1F1;
+  background: #f1f1f1;
 }
 
 .titulo {
@@ -29,6 +29,13 @@ body {
   font-size: 1.7rem;
   font-weight: 400;
   color: #606060;
+}
+@media screen and (max-width: 759px) {
+  .titulo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
 }
 
 .btn {
@@ -42,7 +49,19 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
+@media screen and (max-width: 759px) {
+  .btn {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
 
+@media screen and (max-width: 759px) {
+  label,
+  p {
+    font-size: 0.875rem;
+  }
+}
 .header {
   padding: 1rem;
   background: #fff;
@@ -52,7 +71,22 @@ body {
 }
 .header h1 {
   font-size: 1.4rem;
-  color: #F44336;
+  color: #f44336;
+}
+@media screen and (max-width: 759px) {
+  .header {
+    padding: 0.5rem;
+  }
+  .header h1 {
+    font-size: 1rem;
+  }
+  .header .header-search input {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .header .header-search input:focus, .header .header-search input:hover {
+    width: 200px;
+  }
 }
 
 .header-search {
@@ -68,7 +102,7 @@ body {
   width: 2rem;
   right: 1rem;
   transition: left 0.3s ease-in, width 2s;
-  background: url(./../../img/icones/search.svg) no-repeat left center;
+  background: url("../../img/icones/search.svg") no-repeat left center;
   background-position: 0.5rem;
 }
 .header-search input:focus, .header-search input:hover {
@@ -84,11 +118,34 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 759px) {
+  .intro {
+    background: none;
+    align-items: initial;
+  }
+}
 
 .search-menu {
   width: 890px;
   margin-top: 180px;
   margin-bottom: 180px;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .search-menu {
+    width: 700px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .search-menu {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .search-menu .form {
+    display: block;
+  }
 }
 
 .search-buttons {
@@ -109,7 +166,7 @@ body {
   cursor: pointer;
 }
 .search-buttons button:hover, .search-buttons button.active {
-  background: #F44336;
+  background: #f44336;
   transition: all 0.3s ease-in;
 }
 .search-buttons button img {
@@ -119,12 +176,12 @@ body {
 }
 
 .search-options {
-  height: 220px;
   background: #fff;
   padding: 1rem;
 }
 .search-options button {
   background: #606060;
+  margin-bottom: 1rem;
 }
 .search-options button:hover {
   background: #b6b4b4;
@@ -167,17 +224,38 @@ body {
   color: #606060;
   margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .offers {
+    width: 760px;
+  }
+  .offers .offers-items {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 759px) {
+  .offers {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+  }
+  .offers .offers-items {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .offers .offers-items img {
+    width: 100%;
+    display: block;
+  }
+}
 
 .offers-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 1rem;
 }
-
 .offers-items li {
   position: relative;
 }
-
 .offers-items span {
   position: absolute;
   bottom: 0.5rem;
@@ -193,6 +271,21 @@ body {
 .gallery p {
   color: #606060;
   margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .gallery {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .gallery {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+  }
+  .gallery .gallery-items {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gallery-items {
@@ -220,7 +313,7 @@ body {
 }
 .items-description a {
   text-decoration: none;
-  color: #F44336;
+  color: #f44336;
 }
 
 .newsletter {
@@ -235,6 +328,18 @@ body {
 }
 .newsletter p {
   margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .newsletter {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .newsletter {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+  }
 }
 
 .form-email label {
@@ -255,7 +360,7 @@ body {
 }
 .form-email button {
   display: block;
-  background: #F44336;
+  background: #f44336;
   margin-bottom: 1rem;
 }
 .form-email button:hover {
@@ -281,18 +386,36 @@ body {
 .contact ul li img {
   height: 20px;
 }
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .contact {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .contact {
+    margin: 20px auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  .contact .contact-form textarea {
+    max-width: 100%;
+  }
+}
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   font-size: 1rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
   max-width: 1200px;
 }
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline: none;
 }
-.contact-form input::placeholder, .contact-form textarea::placeholder {
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
   font-family: "Roboto", sans-serif;
   color: #b6b4b4;
   font-size: 1rem;
@@ -308,6 +431,17 @@ body {
   width: 1200px;
   margin: 60px auto;
   text-align: center;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .footer {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .footer {
+    width: 100%;
+    margin: 20px auto;
+  }
 }
 .footer h3 {
   font-weight: 300;
